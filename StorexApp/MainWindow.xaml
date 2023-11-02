@@ -1,0 +1,50 @@
+﻿<Window x:Name="StorexMainWindow" x:Class="StorexApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StorexApp"
+        mc:Ignorable="d"
+        Title="Storex" Height="450" Width="800">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="187"></ColumnDefinition>
+            <ColumnDefinition Width="257"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="HeaderGrid" Grid.ColumnSpan="3" Margin="5,10,5,5" Background="LightGoldenrodYellow">
+            <Label x:Name="StatusLabel" VerticalAlignment="Center" HorizontalAlignment="Center">Welcome to the Azure Storage Explorer by Bellmore Code</Label>
+        </Grid>
+        <Grid Grid.Row="1" Margin="5,5,5,10" Background="LightGoldenrodYellow">
+            <Button Height="24" VerticalAlignment="Top" Margin="4">
+                Add Connection
+            </Button>
+            <ListView Margin="4,32,4,4" Background="Transparent" BorderBrush="Blue">
+
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" Margin="5,5,5,10" Background="LightGoldenrodYellow">
+            <Button Height="24" VerticalAlignment="top" HorizontalAlignment="Left" Width="88" Margin="4">
+                    Add Container
+                </Button>
+                <ListView Margin="4,32,4,4" Background="Transparent" BorderBrush="Blue">
+
+                </ListView>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="2" Margin="5,5,5,10" Background="LightGoldenrodYellow">
+            <Button Height="24" VerticalAlignment="Top" Margin="4" Width="88" HorizontalAlignment="Left">
+                Upload File
+            </Button>
+            <Button Height="24" VerticalAlignment="Top" Margin="96,4,4,4" Width="88" Padding="4,0" HorizontalAlignment="Left">
+                Download File
+            </Button>
+            <ListView Margin="4,32,4,4" Background="Transparent" BorderBrush="Blue">
+
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

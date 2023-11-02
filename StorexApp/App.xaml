@@ -1,0 +1,10 @@
+﻿<Application x:Class="StorexApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:StorexApp"
+             xmlns:local2="clr-namespace:StorexApp.Internals"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <local2:ViewModelLocator x:Key="Locator"></local2:ViewModelLocator>
+    </Application.Resources>
+</Application>
